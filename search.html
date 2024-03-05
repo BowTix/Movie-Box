@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer="defer" src="search.js"></script>
+    <title>Movie Box</title>
+</head>
+<body>
+    <header>
+        <div class="logo-txt">
+          <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo"></a>
+          <h1>Movie <span>Box</span></h1>
+        </div>
+          <a class="account" onclick="burgerMenu()"><i id="burger" class="fa-solid fa-bars"></i></a>
+          <div id="menu">
+              <a href="index.html">Films Populaires</a>
+              <a href="contact.html">Contactez-nous</a>
+              <a id="username" href="account.html">Se connecter</a>
+          </div>
+      </header>
+
+    <div class="search-wrap">
+        <div id="search">
+           <input type="text" class="search-bar" placeholder="Rechercher un film..."/>
+           <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+            <ul id="bar-result">
+
+            </ul>
+        </div>
+     </div>
+
+
+</body>
+</html>
